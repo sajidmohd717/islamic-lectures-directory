@@ -1,0 +1,8 @@
+.heart-softeners {
+    display: flex;
+    gap: 30px;
+}
+
+* {
+    text-align: center;
+}
