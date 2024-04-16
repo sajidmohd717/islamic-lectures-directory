@@ -1,11 +1,15 @@
-.heart-softeners {
+.heart-softeners, .general-quran {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-.general-quran {
-    display: flex;
-    gap: 30px;
+body > div > div {
+    max-width: 300px;
+}
+
+p {
+    margin: 4px;
 }
 
 * {
@@ -15,8 +19,5 @@
 img {
     max-width: 100%;
     height: auto;
-}
-
-.heart-softeners > div {
-    max-width: 300px;
+    margin-bottom: 10px;
 }
