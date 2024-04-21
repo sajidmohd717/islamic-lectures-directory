@@ -13,3 +13,31 @@ let heartSofteners = [
 
 // If i do it like this i don't have to write so much damn muntaine HTML 
 // :((((((
+
+
+// Query Heart Softeners Div
+const heartSoftenersDiv = document.querySelector('heart-softeners')
+
+// Create why me Div
+const whyMeDiv = document.createElement('div')
+whyMeDiv.classList.add('why-me')
+
+// Create thumbnail div
+const thumbnailContainer = document.createElement('div')
+thumbnailContainer.classList.add('thumbnail-container')
+thumbnailContainer.innerHTML = '<a id="why-me-link" href="#"><img class="thumbnail" src="images/whyme.jpg" alt=""></a>'
+
+// Create title-author div
+const titleAuthor = document.createElement('div')
+titleAuthor.classList.add('title-author')
+
+// Create title div
+const titleDiv = document.createElement('div')
+titleDiv.classList.add('title')
+titleDiv.innerHTML = '<span>Why Me | 2024 Ramadan Series <br></span>'
+
+// Create meta-title div
+const metaTitleDiv = document.createElement('div')
+metaTitleDiv.classList.add('meta-title')
+
+// Create meta-title-
