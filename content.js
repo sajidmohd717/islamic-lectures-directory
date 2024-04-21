@@ -16,7 +16,7 @@ let heartSofteners = [
 
 
 // Query Heart Softeners Div
-const heartSoftenersDiv = document.querySelector('heart-softeners')
+const heartSoftenersDiv = document.querySelector('.heart-softeners')
 
 // Create why me Div
 const whyMeDiv = document.createElement('div')
@@ -40,4 +40,21 @@ titleDiv.innerHTML = '<span>Why Me | 2024 Ramadan Series <br></span>'
 const metaTitleDiv = document.createElement('div')
 metaTitleDiv.classList.add('meta-title')
 
-// Create meta-title-
+// Create meta-title-left
+const metaTitleLeft = document.createElement('div')
+metaTitleLeft.classList.add('meta-title-left')
+metaTitleLeft.innerHTML = '<span class="author">Omar Suleiman <br></span> <span class="no-videos">32 Episodes <br></span>'
+
+// Create meta-title-right
+const metaTitleRight = document.createElement('div')
+metaTitleRight.classList.add('meta-title-right')
+metaTitleRight.innerHTML = '<a href="" class="down-arrow"><img class="down-arrow-svg" src="images/down-arrow.svg" alt=""></a>'
+
+//Combining everything together
+metaTitleDiv.appendChild(metaTitleLeft)
+metaTitleDiv.appendChild(metaTitleRight)
+titleAuthor.appendChild(titleDiv)
+titleAuthor.appendChild(metaTitleDiv)
+whyMeDiv.appendChild(thumbnailContainer)
+whyMeDiv.appendChild(titleAuthor)
+heartSoftenersDiv.appendChild(whyMeDiv)
