@@ -1,90 +1,137 @@
-// Wow, the HTML file is getting huge and it's going to be hard to add content to it by just typing, i'll try to refactor the code and try to have some code be in a javascript file
+// Define a function to create HTML elements for each section
+function createSectionElements(sectionDiv, sectionList, sectionTitle) {
+  // Create section header
+  const sectionHeader = document.createElement("h3");
+  sectionHeader.classList.add("section-title");
+  sectionHeader.innerHTML = `<hr>${sectionTitle}`;
+  sectionDiv.appendChild(sectionHeader);
 
-// My plan is to have a list of dictionaries maybe something like this
+  // Loop through the list and create HTML elements for each item
+  sectionList.forEach((item) => {
+    // Create section div
+    const sectionItemDiv = document.createElement("div");
+    sectionItemDiv.classList.add(`${item.class}`);
 
-/*
+    // Create thumbnail div
+    const thumbnailContainer = document.createElement("div");
+    thumbnailContainer.classList.add("thumbnail-container");
+    thumbnailContainer.innerHTML = `<a href="${item.link}"><img class="thumbnail" src="${item.thumbnailImage}" alt=""></a>`;
 
-let heartSofteners = [
-    {Name: "Why Me?", Author: "Omar Suleiman", NoEpisodes: "32 Episodes"},
-    {Name: "Angels in Your Presence", Author: "Omar Suleiman", NoEpisodes: "32 Episodes"},
-]
+    // Create title-author div
+    const titleAuthor = document.createElement("div");
+    titleAuthor.classList.add("title-author");
 
-*/
+    // Create title div
+    const titleDiv = document.createElement("div");
+    titleDiv.classList.add("title");
+    titleDiv.innerHTML = `<span>${item.title}<br></span>`; // Use item.title from the current dictionary
 
-// If i do it like this i don't have to write so much damn muntaine HTML
-// :((((((
+    // Create meta-title div
+    const metaTitleDiv = document.createElement("div");
+    metaTitleDiv.classList.add("meta-title");
 
-// Query Heart Softeners Div
-const heartSoftenersDiv = document.querySelector(".heart-softeners");
+    // Create meta-title-left
+    const metaTitleLeft = document.createElement("div");
+    metaTitleLeft.classList.add("meta-title-left");
+    metaTitleLeft.innerHTML = `<span class="author">${item.speaker}<br></span> <span class="no-videos">${item.episodes}<br></span>`; // Use item.speaker and item.episodes
 
-let heartSoftenersList = [
+    // Create meta-title-right
+    const metaTitleRight = document.createElement("div");
+    metaTitleRight.classList.add("meta-title-right");
+    metaTitleRight.innerHTML =
+      '<a href="" class="down-arrow"><img class="down-arrow-svg" src="images/down-arrow.svg" alt=""></a>';
+
+    // Appending child elements
+    metaTitleDiv.appendChild(metaTitleLeft);
+    metaTitleDiv.appendChild(metaTitleRight);
+    titleAuthor.appendChild(titleDiv);
+    titleAuthor.appendChild(metaTitleDiv);
+    sectionItemDiv.appendChild(thumbnailContainer);
+    sectionItemDiv.appendChild(titleAuthor);
+
+    // Finally, append the sectionItemDiv to sectionDiv
+    sectionDiv.appendChild(sectionItemDiv);
+  });
+}
+
+// Define the combined list of dictionaries
+const combinedList = [
   {
-    title: "Why Me | 2024 Ramadan Series",
-    speaker: "Omar Suleiman",
-    episodes: "32 Episodes",
-    thumbnailImage: "images/whyme.jpg",
-    link: "https://youtube.com/playlist?list=PLQ02IYL5pmhFYDrmxNHAlwgcHOR4h1bPa",
-    class: "why-me-class",
+    sectionDiv: document.querySelector(".heart-softeners"),
+    sectionList: [
+      {
+        title: "Why Me | 2024 Ramadan Series",
+        speaker: "Omar Suleiman",
+        episodes: "32 Episodes",
+        thumbnailImage: "images/whyme.jpg",
+        link: "https://youtube.com/playlist?list=PLQ02IYL5pmhFYDrmxNHAlwgcHOR4h1bPa",
+        class: "why-me-class",
+      },
+      {
+        title: "Angels in Your Presence",
+        speaker: "Omar Suleiman",
+        episodes: "32 Episodes",
+        thumbnailImage: "images/angels1.jpg",
+        link: "https://youtube.com/playlist?list=PLQ02IYL5pmhF2LFN-3QxnuregEv1oKPIc",
+        class: "angels-1-class",
+      },
+    ],
+    sectionTitle: "Heart Softeners",
   },
   {
-    title: "Angels in Your Presence",
-    speaker: "Omar Suleiman",
-    episodes: "32 Episodes",
-    thumbnailImage: "images/angels1.jpg",
-    link: "https://youtube.com/playlist?list=PLQ02IYL5pmhF2LFN-3QxnuregEv1oKPIc",
-    class: "angels-1-class",
+    sectionDiv: document.querySelector(".general-quran"),
+    sectionList: [
+      {
+        title: "The Message of The Quran in 30 Lessons",
+        speaker: "Yasir Qadhi",
+        episodes: "30 Episodes",
+        thumbnailImage: "images/yasirqadhi-quran.jpg",
+        link: "https://youtube.com/playlist?list=PLYZxc42QNctUnn09Of4rBuakQhu-Q2qpc&si=uYzvoE9Buq4NTwKH",
+        class: "quran-30-lessons-class",
+      },
+      {
+        title: "The Parables of The Quran",
+        speaker: "Yasir Qadhi",
+        episodes: "29 Episodes",
+        thumbnailImage: "images/parables-quran.jpg",
+        link: "https://youtube.com/playlist?list=PLYZxc42QNctUIsBRE5XCY6eICwl_W8jnj&si=ycQJB_M7bKswa1Se",
+        class: "parables-quran-class",
+      },
+    ],
+    sectionTitle: "General Quran Tafsir",
   },
+  {
+    sectionDiv: document.querySelector('.life-of-the-prophet'),
+    sectionList: [
+        {
+            title: "Seerah of Prophet Muhammed (S)",
+            speaker: "Yasir Qadhi",
+            episodes: "104 Episodes",
+            thumbnailImage: "images/seerah-yasir.jpg",
+            link: "https://www.youtube.com/playlist?list=PLAEA99D24CA2F9A8F",
+            class: "seerah-qadhi"
+        },
+    ],
+    sectionTitle: "Life of the Prophet (PBUH)"
+  },
+  {
+    sectionDiv: document.querySelector('.learn-arabic'),
+    sectionList: [
+        {
+            title: 'Learn Arabic Through English - Medina Book',
+            speaker: 'Bro. Asif',
+            episodes: '123 Episodes',
+            thumbnailImage: 'images/medina-arabic.jpg',
+            link: 'https://www.youtube.com/playlist?list=PLh3c1SPUmZqGMOtrHD7Kd2uXuvPRDP7ou',
+            class: 'medina-arabic',
+        },
+    ],
+    sectionTitle: 'Learn Arabic'
+  }
+  
 ];
 
-let sectionHeader = document.createElement("h3");
-sectionHeader.classList.add("section-title");
-sectionHeader.innerHTML = "<hr>Heart Softeners";
-heartSoftenersDiv.appendChild(sectionHeader);
-
-// Loop through the list and create HTML elements for each item
-heartSoftenersList.forEach((item) => {
-  // Create why me Div
-  const whyMeDiv = document.createElement("div");
-  whyMeDiv.classList.add(`${item.class}`);
-
-  // Create thumbnail div
-  const thumbnailContainer = document.createElement("div");
-  thumbnailContainer.classList.add("thumbnail-container");
-  thumbnailContainer.innerHTML = `<a id="why-me-link" href="${item.link}"><img class="thumbnail" src="${item.thumbnailImage}" alt=""></a>`;
-
-  // Create title-author div
-  const titleAuthor = document.createElement("div");
-  titleAuthor.classList.add("title-author");
-
-  // Create title div
-  const titleDiv = document.createElement("div");
-  titleDiv.classList.add("title");
-  titleDiv.innerHTML = `<span>${item.title}<br></span>`; // Use item.title from the current dictionary
-
-  // Create meta-title div
-  const metaTitleDiv = document.createElement("div");
-  metaTitleDiv.classList.add("meta-title");
-
-  // Create meta-title-left
-  const metaTitleLeft = document.createElement("div");
-  metaTitleLeft.classList.add("meta-title-left");
-  metaTitleLeft.innerHTML = `<span class="author">${item.speaker}<br></span> <span class="no-videos">${item.episodes}<br></span>`; // Use item.speaker and item.episodes
-
-  // Create meta-title-right
-  const metaTitleRight = document.createElement("div");
-  metaTitleRight.classList.add("meta-title-right");
-  metaTitleRight.innerHTML =
-    '<a href="" class="down-arrow"><img class="down-arrow-svg" src="images/down-arrow.svg" alt=""></a>';
-
-  // Appending child elements
-  metaTitleDiv.appendChild(metaTitleLeft);
-  metaTitleDiv.appendChild(metaTitleRight);
-  titleAuthor.appendChild(titleDiv);
-  titleAuthor.appendChild(metaTitleDiv);
-  whyMeDiv.appendChild(thumbnailContainer);
-  whyMeDiv.appendChild(titleAuthor);
-
-  // Finally, append the whyMeDiv to heartSoftenersDiv
-
-  heartSoftenersDiv.appendChild(whyMeDiv);
+// Loop through the combined list and create HTML elements for each section
+combinedList.forEach(({ sectionDiv, sectionList, sectionTitle }) => {
+  createSectionElements(sectionDiv, sectionList, sectionTitle);
 });
