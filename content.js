@@ -94,41 +94,60 @@ const combinedList = [
         speaker: "Yasir Qadhi",
         episodes: "29 Episodes",
         thumbnailImage: "images/parables-quran.jpg",
-        link: "https://youtube.com/playlist?list=PLYZxc42QNctUIsBRE5XCY6eICwl_W8jnj&si=ycQJB_M7bKswa1Se",
+        link: "https://www.youtube.com/playlist?list=PLYZxc42QNctUIsBRE5XCY6eICwl_W8jnj",
         class: "parables-quran-class",
+      },
+      {
+        title: "Wisdoms of The Quran - Ramadan Series 2024",
+        speaker: "Yasir Qadhi",
+        episodes: "26 Episodes",
+        thumbnailImage: "images/wisdoms_quran.jpg",
+        link: "https://www.youtube.com/playlist?list=PLYZxc42QNctV2v3RRYwTHdgDHp_h80mJT",
       },
     ],
     sectionTitle: "General Quran Tafsir",
   },
   {
-    sectionDiv: document.querySelector('.life-of-the-prophet'),
+    sectionDiv: document.querySelector(".life-of-the-prophet"),
     sectionList: [
-        {
-            title: "Seerah of Prophet Muhammed (S)",
-            speaker: "Yasir Qadhi",
-            episodes: "104 Episodes",
-            thumbnailImage: "images/seerah-yasir.jpg",
-            link: "https://www.youtube.com/playlist?list=PLAEA99D24CA2F9A8F",
-            class: "seerah-qadhi"
-        },
+      {
+        title: "Seerah of Prophet Muhammed (S)",
+        speaker: "Yasir Qadhi",
+        episodes: "104 Episodes",
+        thumbnailImage: "images/seerah-yasir.jpg",
+        link: "https://www.youtube.com/playlist?list=PLAEA99D24CA2F9A8F",
+        class: "seerah-qadhi",
+      },
     ],
-    sectionTitle: "Life of the Prophet (PBUH)"
+    sectionTitle: "Life of the Prophet (PBUH)",
   },
   {
-    sectionDiv: document.querySelector('.learn-arabic'),
+    sectionDiv: document.querySelector(".life-of-sahaba"),
     sectionList: [
-        {
-            title: 'Learn Arabic Through English - Medina Book',
-            speaker: 'Bro. Asif',
-            episodes: '123 Episodes',
-            thumbnailImage: 'images/medina-arabic.jpg',
-            link: 'https://www.youtube.com/playlist?list=PLh3c1SPUmZqGMOtrHD7Kd2uXuvPRDP7ou',
-            class: 'medina-arabic',
-        },
+      {
+        title: "Lives of the Sahaba - Series",
+        speaker: "Yasir Qadhi",
+        episodes: "78 Episodes",
+        thumbnailImage: "images/lives-sahaba.jpg",
+        class: "lives-sahaba-qadhi"
+      },
     ],
-    sectionTitle: 'Learn Arabic'
-  }
-  
+    sectionTitle: "Lives of the Sahaba"
+  },
+  {
+    sectionDiv: document.querySelector(".learn-arabic"),
+    sectionList: [
+      {
+        title: "Learn Arabic Through English - Medina Book",
+        speaker: "Bro. Asif",
+        episodes: "123 Episodes",
+        thumbnailImage: "images/medina-arabic.jpg",
+        link: "https://www.youtube.com/playlist?list=PLh3c1SPUmZqGMOtrHD7Kd2uXuvPRDP7ou",
+        class: "medina-arabic",
+      },
+    ],
+    sectionTitle: "Learn Arabic",
+  },
 ];
 
 // Loop through the combined list and create HTML elements for each section
