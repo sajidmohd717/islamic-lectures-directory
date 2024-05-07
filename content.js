@@ -148,6 +148,20 @@ const combinedList = [
     ],
     sectionTitle: "Learn Arabic",
   },
+  {
+    sectionDiv: document.querySelector(".manners-character"),
+    sectionList: [
+      {
+        title: "Cultivating Character | Season 1",
+        speaker: "Belal Assad",
+        episodes: "16 & counting",
+        thumbnailImage: "images/cultivate-character.jpg",
+        link: "https://www.youtube.com/playlist?list=PLlVjIiCQZC_3pqW9QuI6GfFx-S4eEAsmJ",
+        class: "cultivating-character",
+      },
+    ],
+    sectionTitle: "Manners & Character"
+  }
 ];
 
 // Loop through the combined list and create HTML elements for each section

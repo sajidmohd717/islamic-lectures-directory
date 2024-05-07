@@ -90,3 +90,37 @@ span {
 .presence {
     display: inline;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    background-color: rgb(202, 202, 202);
+    align-items: center;
+}
+
+.footer img {
+    height:100%;
+}
+
+.speaker-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speaker {
+    width: 50px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.speaker-div span {
+    font-size: 12px;
+}
+
+.speakers {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
