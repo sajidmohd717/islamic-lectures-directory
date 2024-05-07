@@ -154,7 +154,7 @@ const combinedList = [
       {
         title: "Cultivating Character | Season 1",
         speaker: "Belal Assad",
-        episodes: "16 & counting",
+        episodes: "16 Episodes & counting",
         thumbnailImage: "images/cultivate-character.jpg",
         link: "https://www.youtube.com/playlist?list=PLlVjIiCQZC_3pqW9QuI6GfFx-S4eEAsmJ",
         class: "cultivating-character",
