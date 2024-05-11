@@ -1,4 +1,6 @@
 import { combinedList } from "./dictionary.js";
+import './style.css';
+import './normalize.css'
 
 // Define a function to create HTML elements for each section
 function createSectionElements(sectionDivTitle, sectionList, sectionTitle) {
