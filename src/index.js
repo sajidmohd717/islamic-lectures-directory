@@ -1,55 +1,60 @@
 import { combinedList } from "./dictionary.js";
 import './style.css';
-import './normalize.css'
+import './normalize.css';
 
-// Define a function to create HTML elements for each section
-function createSectionElements(sectionDivTitle, sectionList, sectionTitle) {
-  // Create section header
-  const sectionDiv = document.createElement('div')
-  const contentDiv = document.querySelector('.content')
-  sectionDiv.classList.add(sectionDivTitle)
+// Define constants for class names
+const SECTION_DIV_CLASS = 'section';
+const SECTION_HEADER_CLASS = 'section-title';
+const THUMBNAIL_CONTAINER_CLASS = 'thumbnail-container';
+const TITLE_CLASS = 'title';
+const META_TITLE_CLASS = 'meta-title';
+const META_TITLE_LEFT_CLASS = 'meta-title-left';
+const META_TITLE_RIGHT_CLASS = 'meta-title-right';
+const AUTHOR_CLASS = 'author';
+const NO_VIDEOS_CLASS = 'no-videos';
+const DOWN_ARROW_CLASS = 'down-arrow';
+const DOWN_ARROW_SVG_CLASS = 'down-arrow-svg';
+
+function createSectionElements({ sectionDivTitle, sectionList, sectionTitle }) {
+  const sectionDiv = document.createElement('div');
+  const contentDiv = document.querySelector('.content');
+  sectionDiv.classList.add(sectionDivTitle);
+
   const sectionHeader = document.createElement("h3");
-  sectionHeader.classList.add("section-title");
-  sectionHeader.innerHTML = `<hr>${sectionTitle}`;
+  sectionHeader.classList.add(SECTION_HEADER_CLASS);
+  sectionHeader.innerHTML = `<hr><h3>${sectionTitle}</h3>`;
   sectionDiv.appendChild(sectionHeader);
-  contentDiv.appendChild(sectionDiv)
+  contentDiv.appendChild(sectionDiv);
 
-  // Loop through the list and create HTML elements for each item
   sectionList.forEach((item) => {
-    // Create section div
     const sectionItemDiv = document.createElement("div");
-    sectionItemDiv.classList.add(`${item.class}`);
+    sectionItemDiv.classList.add(item.class);
 
-    // Create thumbnail div
     const thumbnailContainer = document.createElement("div");
-    thumbnailContainer.classList.add("thumbnail-container");
-    thumbnailContainer.innerHTML = `<a href="${item.link}"><img class="thumbnail" src="${item.thumbnailImage}" alt=""></a>`;
+    thumbnailContainer.classList.add(THUMBNAIL_CONTAINER_CLASS);
+    thumbnailContainer.innerHTML = `
+      <a href="${item.link}">
+        <img class="thumbnail" src="${item.thumbnailImage}" alt="">
+      </a>`;
 
-    // Create title-author div
     const titleAuthor = document.createElement("div");
     titleAuthor.classList.add("title-author");
 
-    // Create title div
     const titleDiv = document.createElement("div");
-    titleDiv.classList.add("title");
-    titleDiv.innerHTML = `<span>${item.title}<br></span>`; // Use item.title from the current dictionary
+    titleDiv.classList.add(TITLE_CLASS);
+    titleDiv.innerHTML = `<span>${item.title}<br></span>`;
 
-    // Create meta-title div
     const metaTitleDiv = document.createElement("div");
-    metaTitleDiv.classList.add("meta-title");
+    metaTitleDiv.classList.add(META_TITLE_CLASS);
 
-    // Create meta-title-left
     const metaTitleLeft = document.createElement("div");
-    metaTitleLeft.classList.add("meta-title-left");
-    metaTitleLeft.innerHTML = `<span class="author">${item.speaker}<br></span> <span class="no-videos">${item.episodes}<br></span>`; // Use item.speaker and item.episodes
+    metaTitleLeft.classList.add(META_TITLE_LEFT_CLASS);
+    metaTitleLeft.innerHTML = `<span class="${AUTHOR_CLASS}">${item.speaker}<br></span> <span class="${NO_VIDEOS_CLASS}">${item.episodes}<br></span>`;
 
-    // Create meta-title-right
     const metaTitleRight = document.createElement("div");
-    metaTitleRight.classList.add("meta-title-right");
-    metaTitleRight.innerHTML =
-      '<a href="" class="down-arrow"><img class="down-arrow-svg" src="images/down-arrow.svg" alt=""></a>';
+    metaTitleRight.classList.add(META_TITLE_RIGHT_CLASS);
+    metaTitleRight.innerHTML = `<a href="" class="${DOWN_ARROW_CLASS}"><img class="${DOWN_ARROW_SVG_CLASS}" src="images/down-arrow.svg" alt=""></a>`;
 
-    // Appending child elements
     metaTitleDiv.appendChild(metaTitleLeft);
     metaTitleDiv.appendChild(metaTitleRight);
     titleAuthor.appendChild(titleDiv);
@@ -57,12 +62,8 @@ function createSectionElements(sectionDivTitle, sectionList, sectionTitle) {
     sectionItemDiv.appendChild(thumbnailContainer);
     sectionItemDiv.appendChild(titleAuthor);
 
-    // Finally, append the sectionItemDiv to sectionDiv
     sectionDiv.appendChild(sectionItemDiv);
   });
 }
 
-// Loop through the combined list and create HTML elements for each section
-combinedList.forEach(({ sectionDivTitle, sectionList, sectionTitle }) => {
-  createSectionElements(sectionDivTitle, sectionList, sectionTitle);
-});
+combinedList.forEach(createSectionElements);
