@@ -136,7 +136,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   combinedList: () => (/* binding */ combinedList)\n/* harmony export */ });\nconst combinedList = [\n  {\n    sectionDivTitle: \"heart-softeners\",\n    sectionList: [\n      {\n        title: \"Why Me | 2024 Ramadan Series\",\n        speaker: \"Omar Suleiman\",\n        episodes: \"32 Episodes\",\n        thumbnailImage: \"images/heart-softeners/whyme.jpg\",\n        link: \"https://youtube.com/playlist?list=PLQ02IYL5pmhFYDrmxNHAlwgcHOR4h1bPa\",\n        class: \"why-me-class\",\n      },\n      {\n        title: \"Angels in Your Presence\",\n        speaker: \"Omar Suleiman\",\n        episodes: \"32 Episodes\",\n        thumbnailImage: \"images/heart-softeners/angels1.jpg\",\n        link: \"https://youtube.com/playlist?list=PLQ02IYL5pmhF2LFN-3QxnuregEv1oKPIc\",\n        class: \"angels-1-class\",\n      },\n    ],\n    sectionTitle: \"Heart Softeners\",\n  },\n  {\n    sectionDivTitle: \"general-quran\",\n    sectionList: [\n      {\n        title: \"The Message of The Quran in 30 Lessons\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"30 Episodes\",\n        thumbnailImage: \"images/general-quran-tafsir/yasirqadhi-quran.jpg\",\n        link: \"https://youtube.com/playlist?list=PLYZxc42QNctUnn09Of4rBuakQhu-Q2qpc&si=uYzvoE9Buq4NTwKH\",\n        class: \"quran-30-lessons-class\",\n      },\n      {\n        title: \"The Parables of The Quran\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"29 Episodes\",\n        thumbnailImage: \"images/general-quran-tafsir/parables-quran.jpg\",\n        link: \"https://www.youtube.com/playlist?list=PLYZxc42QNctUIsBRE5XCY6eICwl_W8jnj\",\n        class: \"parables-quran-class\",\n      },\n      {\n        title: \"Wisdoms of The Quran - Ramadan Series 2024\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"26 Episodes\",\n        thumbnailImage: \"images/general-quran-tafsir/wisdoms_quran.jpg\",\n        link: \"https://www.youtube.com/playlist?list=PLYZxc42QNctV2v3RRYwTHdgDHp_h80mJT\",\n      },\n    ],\n    sectionTitle: \"General Quran Tafsir\",\n  },\n  {\n    sectionDivTitle: \"life-of-the-prophet\",\n    sectionList: [\n      {\n        title: \"Seerah of Prophet Muhammed (S)\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"104 Episodes\",\n        thumbnailImage: \"images/seerah/seerah-yasir.jpg\",\n        link: \"https://www.youtube.com/playlist?list=PLAEA99D24CA2F9A8F\",\n        class: \"seerah-qadhi\",\n      },\n    ],\n    sectionTitle: \"Life of the Prophet (PBUH)\",\n  },\n  {\n    sectionDivTitle: \"life-of-sahaba\",\n    sectionList: [\n      {\n        title: \"Lives of the Sahaba - Series\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"78 Episodes\",\n        thumbnailImage: \"images/sahaba/lives-sahaba.jpg\",\n        class: \"lives-sahaba-qadhi\",\n      },\n    ],\n    sectionTitle: \"Lives of the Sahaba\",\n  },\n  {\n    sectionDivTitle: \"learn-arabic\",\n    sectionList: [\n      {\n        title: \"Learn Arabic Through English - Medina Book\",\n        speaker: \"Bro. Asif\",\n        episodes: \"123 Episodes\",\n        thumbnailImage: \"images/arabic/medina-arabic.jpg\",\n        link: \"https://www.youtube.com/playlist?list=PLh3c1SPUmZqGMOtrHD7Kd2uXuvPRDP7ou\",\n        class: \"medina-arabic\",\n      },\n    ],\n    sectionTitle: \"Learn Arabic\",\n  },\n  {\n    sectionDivTitle: \"manners-character\",\n    sectionList: [\n      {\n        title: \"Cultivating Character | Season 1\",\n        speaker: \"Belal Assad\",\n        episodes: \"16 Episodes & counting\",\n        thumbnailImage: \"images/manners-character/cultivate-character.jpg\",\n        link: \"https://www.youtube.com/playlist?list=PLlVjIiCQZC_3pqW9QuI6GfFx-S4eEAsmJ\",\n        class: \"cultivating-character\",\n      },\n    ],\n    sectionTitle: \"Manners & Character\",\n  },\n];\n\n\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/dictionary.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   combinedList: () => (/* binding */ combinedList)\n/* harmony export */ });\nconst combinedList = [\n  {\n    sectionDivTitle: \"heart-softeners\",\n    sectionList: [\n      {\n        title: \"Why Me | 2024 Ramadan Series\",\n        speaker: \"Omar Suleiman\",\n        episodes: \"32 Episodes\",\n        thumbnailImage: __webpack_require__(/*! ./images/heart-softeners/whyme.jpg */ \"./src/images/heart-softeners/whyme.jpg\"),\n        link: \"https://youtube.com/playlist?list=PLQ02IYL5pmhFYDrmxNHAlwgcHOR4h1bPa\",\n        class: \"why-me-class\",\n      },\n      {\n        title: \"Angels in Your Presence\",\n        speaker: \"Omar Suleiman\",\n        episodes: \"32 Episodes\",\n        thumbnailImage: __webpack_require__(/*! ./images/heart-softeners/angels1.jpg */ \"./src/images/heart-softeners/angels1.jpg\"),\n        link: \"https://youtube.com/playlist?list=PLQ02IYL5pmhF2LFN-3QxnuregEv1oKPIc\",\n        class: \"angels-1-class\",\n      },\n    ],\n    sectionTitle: \"Heart Softeners\",\n  },\n  {\n    sectionDivTitle: \"general-quran\",\n    sectionList: [\n      {\n        title: \"The Message of The Quran in 30 Lessons\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"30 Episodes\",\n        thumbnailImage: __webpack_require__(/*! ./images/general-quran-tafsir/yasirqadhi-quran.jpg */ \"./src/images/general-quran-tafsir/yasirqadhi-quran.jpg\"),\n        link: \"https://youtube.com/playlist?list=PLYZxc42QNctUnn09Of4rBuakQhu-Q2qpc&si=uYzvoE9Buq4NTwKH\",\n        class: \"quran-30-lessons-class\",\n      },\n      {\n        title: \"The Parables of The Quran\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"29 Episodes\",\n        thumbnailImage: __webpack_require__(/*! ./images/general-quran-tafsir/parables-quran.jpg */ \"./src/images/general-quran-tafsir/parables-quran.jpg\"),\n        link: \"https://www.youtube.com/playlist?list=PLYZxc42QNctUIsBRE5XCY6eICwl_W8jnj\",\n        class: \"parables-quran-class\",\n      },\n      {\n        title: \"Wisdoms of The Quran - Ramadan Series 2024\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"26 Episodes\",\n        thumbnailImage: __webpack_require__(/*! ./images/general-quran-tafsir/wisdoms_quran.jpg */ \"./src/images/general-quran-tafsir/wisdoms_quran.jpg\"),\n        link: \"https://www.youtube.com/playlist?list=PLYZxc42QNctV2v3RRYwTHdgDHp_h80mJT\",\n      },\n    ],\n    sectionTitle: \"General Quran Tafsir\",\n  },\n  {\n    sectionDivTitle: \"life-of-the-prophet\",\n    sectionList: [\n      {\n        title: \"Seerah of Prophet Muhammed (S)\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"104 Episodes\",\n        thumbnailImage: __webpack_require__(/*! ./images/seerah/seerah-yasir.jpg */ \"./src/images/seerah/seerah-yasir.jpg\"),\n        link: \"https://www.youtube.com/playlist?list=PLAEA99D24CA2F9A8F\",\n        class: \"seerah-qadhi\",\n      },\n    ],\n    sectionTitle: \"Life of the Prophet (PBUH)\",\n  },\n  {\n    sectionDivTitle: \"life-of-sahaba\",\n    sectionList: [\n      {\n        title: \"Lives of the Sahaba - Series\",\n        speaker: \"Yasir Qadhi\",\n        episodes: \"78 Episodes\",\n        thumbnailImage: __webpack_require__(/*! ./images/sahaba/lives-sahaba.jpg */ \"./src/images/sahaba/lives-sahaba.jpg\"),\n        class: \"lives-sahaba-qadhi\",\n      },\n    ],\n    sectionTitle: \"Lives of the Sahaba\",\n  },\n  {\n    sectionDivTitle: \"learn-arabic\",\n    sectionList: [\n      {\n        title: \"Learn Arabic Through English - Medina Book\",\n        speaker: \"Bro. Asif\",\n        episodes: \"123 Episodes\",\n        thumbnailImage: __webpack_require__(/*! ./images/arabic/medina-arabic.jpg */ \"./src/images/arabic/medina-arabic.jpg\"),\n        link: \"https://www.youtube.com/playlist?list=PLh3c1SPUmZqGMOtrHD7Kd2uXuvPRDP7ou\",\n        class: \"medina-arabic\",\n      },\n    ],\n    sectionTitle: \"Learn Arabic\",\n  },\n  {\n    sectionDivTitle: \"manners-character\",\n    sectionList: [\n      {\n        title: \"Cultivating Character | Season 1\",\n        speaker: \"Belal Assad\",\n        episodes: \"16 Episodes & counting\",\n        thumbnailImage: __webpack_require__(/*! ./images/manners-character/cultivate-character.jpg */ \"./src/images/manners-character/cultivate-character.jpg\"),\n        link: \"https://www.youtube.com/playlist?list=PLlVjIiCQZC_3pqW9QuI6GfFx-S4eEAsmJ\",\n        class: \"cultivating-character\",\n      },\n    ],\n    sectionTitle: \"Manners & Character\",\n  },\n];\n\n\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/dictionary.js?");
+
+/***/ }),
+
+/***/ "./src/image.js":
+/*!**********************!*\
+  !*** ./src/image.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   images: () => (/* binding */ images)\n/* harmony export */ });\nconst images = {\n  \"images/heart-softeners/whyme.jpg\": __webpack_require__(/*! ./images/heart-softeners/whyme.jpg */ \"./src/images/heart-softeners/whyme.jpg\"),\n  \"images/heart-softeners/angels1.jpg\": __webpack_require__(/*! ./images/heart-softeners/angels1.jpg */ \"./src/images/heart-softeners/angels1.jpg\"),\n};\n\n\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/image.js?");
 
 /***/ }),
 
@@ -146,7 +156,97 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dictionary_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dictionary.js */ \"./src/dictionary.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./normalize.css */ \"./src/normalize.css\");\n\n\n\n\n// Define a function to create HTML elements for each section\nfunction createSectionElements(sectionDivTitle, sectionList, sectionTitle) {\n  // Create section header\n  const sectionDiv = document.createElement('div')\n  const contentDiv = document.querySelector('.content')\n  sectionDiv.classList.add(sectionDivTitle)\n  const sectionHeader = document.createElement(\"h3\");\n  sectionHeader.classList.add(\"section-title\");\n  sectionHeader.innerHTML = `<hr>${sectionTitle}`;\n  sectionDiv.appendChild(sectionHeader);\n  contentDiv.appendChild(sectionDiv)\n\n  // Loop through the list and create HTML elements for each item\n  sectionList.forEach((item) => {\n    // Create section div\n    const sectionItemDiv = document.createElement(\"div\");\n    sectionItemDiv.classList.add(`${item.class}`);\n\n    // Create thumbnail div\n    const thumbnailContainer = document.createElement(\"div\");\n    thumbnailContainer.classList.add(\"thumbnail-container\");\n    thumbnailContainer.innerHTML = `<a href=\"${item.link}\"><img class=\"thumbnail\" src=\"${item.thumbnailImage}\" alt=\"\"></a>`;\n\n    // Create title-author div\n    const titleAuthor = document.createElement(\"div\");\n    titleAuthor.classList.add(\"title-author\");\n\n    // Create title div\n    const titleDiv = document.createElement(\"div\");\n    titleDiv.classList.add(\"title\");\n    titleDiv.innerHTML = `<span>${item.title}<br></span>`; // Use item.title from the current dictionary\n\n    // Create meta-title div\n    const metaTitleDiv = document.createElement(\"div\");\n    metaTitleDiv.classList.add(\"meta-title\");\n\n    // Create meta-title-left\n    const metaTitleLeft = document.createElement(\"div\");\n    metaTitleLeft.classList.add(\"meta-title-left\");\n    metaTitleLeft.innerHTML = `<span class=\"author\">${item.speaker}<br></span> <span class=\"no-videos\">${item.episodes}<br></span>`; // Use item.speaker and item.episodes\n\n    // Create meta-title-right\n    const metaTitleRight = document.createElement(\"div\");\n    metaTitleRight.classList.add(\"meta-title-right\");\n    metaTitleRight.innerHTML =\n      '<a href=\"\" class=\"down-arrow\"><img class=\"down-arrow-svg\" src=\"images/down-arrow.svg\" alt=\"\"></a>';\n\n    // Appending child elements\n    metaTitleDiv.appendChild(metaTitleLeft);\n    metaTitleDiv.appendChild(metaTitleRight);\n    titleAuthor.appendChild(titleDiv);\n    titleAuthor.appendChild(metaTitleDiv);\n    sectionItemDiv.appendChild(thumbnailContainer);\n    sectionItemDiv.appendChild(titleAuthor);\n\n    // Finally, append the sectionItemDiv to sectionDiv\n    sectionDiv.appendChild(sectionItemDiv);\n  });\n}\n\n// Loop through the combined list and create HTML elements for each section\n_dictionary_js__WEBPACK_IMPORTED_MODULE_0__.combinedList.forEach(({ sectionDivTitle, sectionList, sectionTitle }) => {\n  createSectionElements(sectionDivTitle, sectionList, sectionTitle);\n});\n\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dictionary_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dictionary.js */ \"./src/dictionary.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./normalize.css */ \"./src/normalize.css\");\n/* harmony import */ var _images_heart_softeners_angels1_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/heart-softeners/angels1.jpg */ \"./src/images/heart-softeners/angels1.jpg\");\n/* harmony import */ var _image_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./image.js */ \"./src/image.js\");\n\n\n\n\n\n\n// Define a function to create HTML elements for each section\nfunction createSectionElements(sectionDivTitle, sectionList, sectionTitle) {\n  // Create section header\n  const sectionDiv = document.createElement('div')\n  const contentDiv = document.querySelector('.content')\n  sectionDiv.classList.add(sectionDivTitle)\n  const sectionHeader = document.createElement(\"h3\");\n  sectionHeader.classList.add(\"section-title\");\n  sectionHeader.innerHTML = `<hr>${sectionTitle}`;\n  sectionDiv.appendChild(sectionHeader);\n  contentDiv.appendChild(sectionDiv)\n\n  // Loop through the list and create HTML elements for each item\n  sectionList.forEach((item) => {\n    // Create section div\n    const sectionItemDiv = document.createElement(\"div\");\n    sectionItemDiv.classList.add(`${item.class}`);\n\n    // Create thumbnail div\n    const thumbnailContainer = document.createElement(\"div\");\n    thumbnailContainer.classList.add(\"thumbnail-container\");\n    thumbnailContainer.innerHTML = `<a href=\"${item.link}\"><img class=\"thumbnail\" src=\"${item.thumbnailImage}\" alt=\"\"></a>`;\n\n    // Create title-author div\n    const titleAuthor = document.createElement(\"div\");\n    titleAuthor.classList.add(\"title-author\");\n\n    // Create title div\n    const titleDiv = document.createElement(\"div\");\n    titleDiv.classList.add(\"title\");\n    titleDiv.innerHTML = `<span>${item.title}<br></span>`; // Use item.title from the current dictionary\n\n    // Create meta-title div\n    const metaTitleDiv = document.createElement(\"div\");\n    metaTitleDiv.classList.add(\"meta-title\");\n\n    // Create meta-title-left\n    const metaTitleLeft = document.createElement(\"div\");\n    metaTitleLeft.classList.add(\"meta-title-left\");\n    metaTitleLeft.innerHTML = `<span class=\"author\">${item.speaker}<br></span> <span class=\"no-videos\">${item.episodes}<br></span>`; // Use item.speaker and item.episodes\n\n    // Create meta-title-right\n    const metaTitleRight = document.createElement(\"div\");\n    metaTitleRight.classList.add(\"meta-title-right\");\n    metaTitleRight.innerHTML =\n      '<a href=\"\" class=\"down-arrow\"><img class=\"down-arrow-svg\" src=\"images/down-arrow.svg\" alt=\"\"></a>';\n\n    // Appending child elements\n    metaTitleDiv.appendChild(metaTitleLeft);\n    metaTitleDiv.appendChild(metaTitleRight);\n    titleAuthor.appendChild(titleDiv);\n    titleAuthor.appendChild(metaTitleDiv);\n    sectionItemDiv.appendChild(thumbnailContainer);\n    sectionItemDiv.appendChild(titleAuthor);\n\n    // Finally, append the sectionItemDiv to sectionDiv\n    sectionDiv.appendChild(sectionItemDiv);\n  });\n}\n\n// Loop through the combined list and create HTML elements for each section\n_dictionary_js__WEBPACK_IMPORTED_MODULE_0__.combinedList.forEach(({ sectionDivTitle, sectionList, sectionTitle }) => {\n  createSectionElements(sectionDivTitle, sectionList, sectionTitle);\n});\n\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/images/arabic/medina-arabic.jpg":
+/*!*********************************************!*\
+  !*** ./src/images/arabic/medina-arabic.jpg ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"e1113061100d3ef23449.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/arabic/medina-arabic.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/general-quran-tafsir/parables-quran.jpg":
+/*!************************************************************!*\
+  !*** ./src/images/general-quran-tafsir/parables-quran.jpg ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6009e64500ceb7bb59dd.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/general-quran-tafsir/parables-quran.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/general-quran-tafsir/wisdoms_quran.jpg":
+/*!***********************************************************!*\
+  !*** ./src/images/general-quran-tafsir/wisdoms_quran.jpg ***!
+  \***********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"129010dc496bda38a457.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/general-quran-tafsir/wisdoms_quran.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/general-quran-tafsir/yasirqadhi-quran.jpg":
+/*!**************************************************************!*\
+  !*** ./src/images/general-quran-tafsir/yasirqadhi-quran.jpg ***!
+  \**************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"55b6748d55b51156dbe2.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/general-quran-tafsir/yasirqadhi-quran.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/heart-softeners/angels1.jpg":
+/*!************************************************!*\
+  !*** ./src/images/heart-softeners/angels1.jpg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"02af2e5708bd1f2a1993.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/heart-softeners/angels1.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/heart-softeners/whyme.jpg":
+/*!**********************************************!*\
+  !*** ./src/images/heart-softeners/whyme.jpg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"7bdc684052a22588711b.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/heart-softeners/whyme.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/manners-character/cultivate-character.jpg":
+/*!**************************************************************!*\
+  !*** ./src/images/manners-character/cultivate-character.jpg ***!
+  \**************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"eb51c5838aa88c835bee.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/manners-character/cultivate-character.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/sahaba/lives-sahaba.jpg":
+/*!********************************************!*\
+  !*** ./src/images/sahaba/lives-sahaba.jpg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"2cdfad8834fe5c9bc7d8.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/sahaba/lives-sahaba.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/seerah/seerah-yasir.jpg":
+/*!********************************************!*\
+  !*** ./src/images/seerah/seerah-yasir.jpg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"85ec0335f0b80470fcac.jpg\";\n\n//# sourceURL=webpack://islamic-lectures-directory/./src/images/seerah/seerah-yasir.jpg?");
 
 /***/ })
 
@@ -201,6 +301,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dic
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -215,6 +327,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dic
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
