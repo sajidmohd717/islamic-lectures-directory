@@ -1,0 +1,11 @@
+{
+  "name": "islamic-lectures-directory",
+  "version": "1.0.0",
+  "description": "Want to watch powerful and beneficial islamic lectures that are series based. Click on the link below to see a directory of a few of them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
