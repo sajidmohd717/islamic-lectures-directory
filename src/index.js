@@ -1,6 +1,8 @@
 import { combinedList } from "./dictionary.js";
 import './style.css';
 import './normalize.css'
+import heart from './images/heart-softeners/angels1.jpg'
+import { images } from "./image.js";
 
 // Define a function to create HTML elements for each section
 function createSectionElements(sectionDivTitle, sectionList, sectionTitle) {
