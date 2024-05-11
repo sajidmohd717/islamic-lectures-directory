@@ -1,10 +1,14 @@
 // Define a function to create HTML elements for each section
-function createSectionElements(sectionDiv, sectionList, sectionTitle) {
+function createSectionElements(sectionDivTitle, sectionList, sectionTitle) {
   // Create section header
+  const sectionDiv = document.createElement('div')
+  const contentDiv = document.querySelector('.content')
+  sectionDiv.classList.add(sectionDivTitle)
   const sectionHeader = document.createElement("h3");
   sectionHeader.classList.add("section-title");
   sectionHeader.innerHTML = `<hr>${sectionTitle}`;
   sectionDiv.appendChild(sectionHeader);
+  contentDiv.appendChild(sectionDiv)
 
   // Loop through the list and create HTML elements for each item
   sectionList.forEach((item) => {
@@ -57,7 +61,7 @@ function createSectionElements(sectionDiv, sectionList, sectionTitle) {
 // Define the combined list of dictionaries
 const combinedList = [
   {
-    sectionDiv: document.querySelector(".heart-softeners"),
+    sectionDivTitle: "heart-softeners",
     sectionList: [
       {
         title: "Why Me | 2024 Ramadan Series",
@@ -79,7 +83,7 @@ const combinedList = [
     sectionTitle: "Heart Softeners",
   },
   {
-    sectionDiv: document.querySelector(".general-quran"),
+    sectionDivTitle: "general-quran",
     sectionList: [
       {
         title: "The Message of The Quran in 30 Lessons",
@@ -108,7 +112,7 @@ const combinedList = [
     sectionTitle: "General Quran Tafsir",
   },
   {
-    sectionDiv: document.querySelector(".life-of-the-prophet"),
+    sectionDivTitle: "life-of-the-prophet",
     sectionList: [
       {
         title: "Seerah of Prophet Muhammed (S)",
@@ -122,7 +126,7 @@ const combinedList = [
     sectionTitle: "Life of the Prophet (PBUH)",
   },
   {
-    sectionDiv: document.querySelector(".life-of-sahaba"),
+    sectionDivTitle: "life-of-sahaba",
     sectionList: [
       {
         title: "Lives of the Sahaba - Series",
@@ -135,7 +139,7 @@ const combinedList = [
     sectionTitle: "Lives of the Sahaba"
   },
   {
-    sectionDiv: document.querySelector(".learn-arabic"),
+    sectionDivTitle: "learn-arabic",
     sectionList: [
       {
         title: "Learn Arabic Through English - Medina Book",
@@ -149,7 +153,7 @@ const combinedList = [
     sectionTitle: "Learn Arabic",
   },
   {
-    sectionDiv: document.querySelector(".manners-character"),
+    sectionDivTitle: "manners-character",
     sectionList: [
       {
         title: "Cultivating Character | Season 1",
@@ -165,6 +169,6 @@ const combinedList = [
 ];
 
 // Loop through the combined list and create HTML elements for each section
-combinedList.forEach(({ sectionDiv, sectionList, sectionTitle }) => {
-  createSectionElements(sectionDiv, sectionList, sectionTitle);
+combinedList.forEach(({ sectionDivTitle, sectionList, sectionTitle }) => {
+  createSectionElements(sectionDivTitle, sectionList, sectionTitle);
 });
