@@ -107,4 +107,15 @@ const combinedList = [
   },
 ];
 
-export { combinedList }
+const speakersList = [
+  {
+    speaker: "Omar Suleiman",
+    image: require("./images/speakers/omar_suleiman_profile.jpg")
+  },
+  {
+    speaker: "Yasir Qadhi",
+    image: require("./images/speakers/yasir_qadhi_profile.jpg")
+  }
+]
+
+export { combinedList, speakersList }

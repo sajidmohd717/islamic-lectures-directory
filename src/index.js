@@ -1,4 +1,4 @@
-import { combinedList } from "./dictionary.js";
+import { combinedList, speakersList  } from "./dictionary.js";
 import './style.css';
 import './normalize.css';
 
@@ -66,4 +66,22 @@ function createSectionElements({ sectionDivTitle, sectionList, sectionTitle }) {
   });
 }
 
+function createSpeakers(speaker) {
+  const speakersDiv = document.querySelector(".speakers")
+  const div = document.createElement("div")
+  div.classList.add("speaker-div")
+
+  const img = document.createElement("img")
+  img.src = speaker.image
+  img.classList.add("speaker")
+
+  const span = document.createElement("span")
+  span.innerText = speaker.speaker
+
+  div.appendChild(img);
+  div.appendChild(span);
+  speakersDiv.appendChild(div);
+}
+
+speakersList.forEach(createSpeakers)
 combinedList.forEach(createSectionElements);
