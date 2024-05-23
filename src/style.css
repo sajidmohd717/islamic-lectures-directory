@@ -124,3 +124,7 @@ span {
     gap: 50px;
     justify-content: center;
 }
+
+.speaker-container {
+    margin: 0px 15px;
+}
