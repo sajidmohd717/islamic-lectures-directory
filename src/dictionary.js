@@ -105,6 +105,20 @@ const combinedList = [
     ],
     sectionTitle: "Manners & Character",
   },
+  {
+    sectionDivTitle: "story-musa",
+    sectionList: [
+      {
+        title: "The Story of Musa",
+        speaker: "Majed Mahmoud",
+        episodes: "15 Episodes",
+        thumbnailImage: require("./images/previous-prophets/story-musa.jpg"),
+        link: "https://www.youtube.com/playlist?list=PL94jFmRfuftaJ2L38OmB-O-yyVi4XyKU4",
+        class: "story-musa"
+      },
+    ],
+    sectionTitle: "Stories of Previous Prophets"
+  }
 ];
 
 const speakersList = [
